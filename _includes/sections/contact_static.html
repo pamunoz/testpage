@@ -1,0 +1,115 @@
+<!-- Contact Section -->
+<section id="contact">
+	<div class="container" id="i18_contact_me">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="navy-line"></div>
+				<h1>
+					<span data-i18n="about_me.contact_me">Contactenos</span>
+				</h1>
+				<hr class="star-primary">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<form class="form-horizontal" method="post">
+					<fieldset>
+						<div class="form-group">
+							<div class="col-md-10 col-md-offset-1">
+								<input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-10 col-md-offset-1">
+								<input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-md-10 col-md-offset-1">
+								<input id="email" name="email" type="text" placeholder="Email" class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-md-10 col-md-offset-1">
+								<input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-md-10 col-md-offset-1">
+								<textarea class="form-control" id="message" name="message" placeholder="Escriba su mensaje para nosotros aqui. Le responderemos lo más pronto posible."
+								 rows="7"></textarea>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-md-12 text-center">
+								<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<div>
+					<div>
+						<div class="text-center">
+								
+							<h4>Dirección</h4>
+							<div>
+								
+								{{ site.direccion-especifica }}
+								<br /> {{ site.direccion-general }}
+								<br /> #{{ site.phone }}
+								<br /> {{ site.mail }}
+								<br />
+							</div>
+							<hr />
+							<div id="map1" class="map">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		jQuery(function ($) {
+			function init_map1() {
+				var myLocation = new google.maps.LatLng(-33.65, -71.3333);
+				var mapOptions = {
+					center: myLocation,
+					zoom: 16
+				};
+				var marker = new google.maps.Marker({
+					position: myLocation,
+					title: "Property Location"
+				});
+				var map = new google.maps.Map(document.getElementById("map1"),
+					mapOptions);
+				marker.setMap(map);
+			}
+			init_map1();
+		});
+	</script>
+
+	<style>
+		.map {
+			min-width: 300px;
+			min-height: 300px;
+			width: 100%;
+			height: 100%;
+		}
+
+		.header {
+
+			color: #ffffff;
+			height: 70px;
+			font-size: 27px;
+			padding: 10px;
+		}
+	</style>
+</section>

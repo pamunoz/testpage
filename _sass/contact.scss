@@ -1,0 +1,67 @@
+input[type=text], input[type=email], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	//margin-top: 6px;
+	resize: vertical;
+	color: $dark-grey;
+	font-size: 14px;
+}
+
+input[type=submit] {
+	background-color: $green;
+	color: $primary-white;
+	font-weight: bold;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+}
+input[type=submit]:hover {
+	background-color: lighten($color: $green, $amount: 25);
+	display: block;
+	color: $primary-white;
+	
+}
+#user-message {
+	height: 200px;
+	min-height: 200px;
+}
+label {
+	display: block;
+	color: slateblue;
+	font-weight: bold;
+	width: 100%;
+	float: left;
+	margin-bottom: none;
+}
+label[for="message"], label[for="_replyto"], label[for="name"] {
+	color: $primary-white;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 6px;
+	margin-bottom: 0px;
+	background-color: $transparent;
+}
+
+.container-form {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+}
+#contact {
+	padding-bottom: 6px;
+}
+#message {
+	background: #fff;
+}
+
+#_replyto {
+	background: #fff;
+}
+
+#name {
+	background: #fff;
+}

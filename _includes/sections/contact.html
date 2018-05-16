@@ -1,0 +1,50 @@
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container" id="i18_contact_me">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>
+                    <span data-i18n="about_me.contact_me">Contactenos</span>
+                </h1>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+
+                <div container-form>
+                    <form class="form" id="contactform" action="//formspree.io/alex.ascencio@axf.cl" method="POST">
+                        <fieldset class="field">
+                            <label class="label" for="name">
+                                <span class="label-content">Nombre</span>
+                            </label>
+                            <input class="input" type="text" name="name" placeholder="Nombre" id="name" required>
+
+                        </fieldset>
+                        <fieldset class="field">
+                            <label id="label-email" class="label" for="_replyto">
+                                <span class="label-content">Email</span>
+                            </label>
+                            <input class="input" type="email" name="_replyto" placeholder="ejemplo@domain.com" id="_replyto" required>
+
+                        </fieldset>
+                        <fieldset class="field">
+                            <label class="label" for="message">
+                                <span class="label-content">Mensaje</span>
+                            </label>
+                            <textarea class="input" name="message" rows="5" placeholder="Mensaje" id="message" required></textarea>
+                        </fieldset>
+                        <input class="hidden" type="text" name="_gotcha" style="display:none">
+                        <input class="hidden" type="hidden" name="_subject" value="Message via http://domain.com">
+                        <fieldset class="field">
+                            <input class="button submit" type="submit" value="Enviar">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

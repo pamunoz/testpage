@@ -1,0 +1,44 @@
+@mixin brand {
+    color: $primary-white;
+    height: auto;
+    display: block;
+    padding: 15px 15px;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 700;
+    transition: all .3s ease-in-out 0s;
+}
+
+@mixin perspective($pixels) {
+	-webkit-perspective: $pixels;
+	-moz-perspective: $pixels;
+	-o-perspective: $pixels;
+	perspective: $pixels;
+}
+
+@mixin transition($speed) {
+	-webkit-transition: -webkit-transform $speed;
+	-moz-transition: -moz-transform $speed;
+	-o-transition: -o-transform $speed;
+	transition: transform $speed;
+}
+
+@mixin transform-style() {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+@mixin transform($degrees) {
+	-webkit-transform: rotateX( $degrees + deg);
+	-moz-transform: rotateX( $degrees + deg);
+	-o-transform: rotateX( $degrees + deg);
+	transform: rotateX( $degrees + deg);
+}
+
+@mixin backface-visibility() {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}

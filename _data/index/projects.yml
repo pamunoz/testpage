@@ -1,0 +1,47 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+# - name: Jalpc
+#   i18n: jalpc
+#   gh_user: jarrekk
+#   repo: Jalpc
+#   img: /static/assets/img/landing/jekyll.png
+#   desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
+
+# - name: Python
+#   i18n: cpython
+#   gh_user: python
+#   repo: cpython
+#   img: /static/assets/img/landing/python.png
+#   desc: This project is other's project. I use another request to get repo's information.
+
+# - name: Google
+#   i18n: google
+#   url: https://google.com
+#   img: /static/assets/img/landing/google.png
+#   desc: This is another project.
+
+- name: Transporte de carga refigerada.
+  i18n: google
+  url: https://google.com
+  img: /static/assets/img/landing/refigerated_1.svg
+  desc: Contamos con equipos Underland para la mantención de frio en contenedores Reefer de 20 y 40 pies.
+
+- name: Transporte de carga seca.
+  i18n: google
+  url: https://google.com
+  img: /static/assets/img/landing/dry_1.svg
+  desc: Ponemos a su disposición equipos, chasis y ramplas, para el transporte de contenedores Dry de 20 y 40 pies.
+
+- name: Seguridad para el transporte.
+  i18n: google
+  url: https://google.com
+  img: /static/assets/img/landing/secure_1.svg
+  desc: Poseemos seguros de transporte que le brindan tranquilidad a nuestros asociados y clientes en caso de eventualidades.<br>Contamos con un taller propio, lo que nos permite mantener todos nuestros equipos listos para un funcionamiento excelente.<br>Disponemos de un amplio aparcadero, con personal de seguridad, que permite el resguardo de nuestros equipos y el movimiento de containers, desde nuestra ubicación hacia los puertos de la V región o Santiago.
+
+- name: Geolocalización.
+  i18n: google
+  url: https://google.com
+  img: /static/assets/img/landing/geo_1.svg
+  desc: Incorporamos un sistema de monitoreo GPS para toda la flota de AXF Transportes, el que nos permite observar su carga y nuestro servicio de forma continua en tiempo real.
+
